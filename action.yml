@@ -1,5 +1,5 @@
 name: 'PR Labeler Action'
-description: 'Adds pull request file changes as a comment to a newly opened PR and add the appropiate labels to it'
+description: 'Adds pull request file changes as a comment to a newly opened PR and add the appropriate labels to it'
 inputs:
   owner:
     description: 'The owner of the repository'
@@ -14,5 +14,5 @@ inputs:
     description: 'The token to use to access the GitHub API'
     required: true
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'dist/index.js'
