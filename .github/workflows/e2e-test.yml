@@ -122,7 +122,7 @@ jobs:
         shell: bash
         
   e2e-tests:
-    needs: [install]
+    needs: [install, analyze]
     runs-on: ubuntu-latest
     environment: UAT
     name: Trigger E2E Tests on UAT Environment
